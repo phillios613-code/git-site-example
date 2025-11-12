@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Корзина покупок</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+    .products {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    }
+
+    .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    width: 280px;
+    text-align: center;
+    }
+
+    .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    }    
+  </style>
+</head>
+<body>
+  <h1>Интернет-магазин «JS Goods»</h1>
+
+  <section id="catalog">
+    <!-- Товары будут добавлены сюда через JS -->
+  </section>
+
+  <section id="cart">
+    <h2>Корзина</h2>
+    <!-- Содержимое корзины будет обновляться через JS -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
